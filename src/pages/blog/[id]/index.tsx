@@ -34,7 +34,7 @@ const Index = () => {
 
           <div className="mt-6 flex flex-col gap-4 text-[15px] text-[#6B7280] lg:text-base">
             {data?.post?.content?.map((content) => (
-              <div>
+              <div key={content.sectionTitle}>
                 <h3 className="text-lg">{content.sectionTitle}</h3>
                 <p>{content.text}</p>
               </div>

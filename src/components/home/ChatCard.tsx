@@ -1,6 +1,7 @@
 import React from "react";
 import { Arrow } from "../icons";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import { useRouter } from "next/router";
 
 interface IChatCard {

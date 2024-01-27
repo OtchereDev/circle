@@ -11,7 +11,9 @@ const client = createClient({
 client.on("error", (err) => console.log(err));
 
 if (!client.isOpen) {
-  client.connect();
+  client.connect().catch((err) => {
+    console.log(err);
+  });
 }
 
 export { client };

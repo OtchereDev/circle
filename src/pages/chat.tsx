@@ -1,12 +1,11 @@
 import { useUser } from "@auth0/nextjs-auth0/client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ChatItem from "~/components/chat/ChatItem";
 import { Plus, Recent, SelectArrow, Send } from "~/components/icons";
 import Select from "~/components/shared/Select";
 import useChat from "~/hooks/useChat";
 import MainLayout from "~/layout/MainLayout";
 import { Toaster, toast } from "sonner";
-import { api } from "~/utils/api";
 
 const Chat = () => {
   const {
@@ -20,7 +19,7 @@ const Chat = () => {
   const { user } = useUser();
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!user) {
       toast("Please login or sign up first", { position: "top-right" });
@@ -102,8 +101,9 @@ const Chat = () => {
         <div className="h-full w-[calc(100%-310px)]  rounded-2xl bg-[#F9FAFB] px-10 py-10">
           <div className="flex h-[90%] min-h-[90%]  overflow-scroll pb-6 ">
             <div className="h-full overflow-scroll ">
-              {messages.map((message) => (
+              {messages.map((message, idx) => (
                 <ChatItem
+                  key={idx}
                   isBot={message.role == "assistant"}
                   message={message.content as string}
                   initials="SI"

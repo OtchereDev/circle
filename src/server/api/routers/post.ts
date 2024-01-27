@@ -4,7 +4,7 @@ import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 import { blogs } from "./blogs";
 
 export const postRouter = createTRPCRouter({
-  getPosts: publicProcedure.query(async () => {
+  getPosts: publicProcedure.query(() => {
     const posts = blogs.map((blog) => ({
       id: blog.id,
       title: blog.blogTitle,
@@ -22,7 +22,7 @@ export const postRouter = createTRPCRouter({
         postId: z.string().optional(),
       }),
     )
-    .query(async ({ input }) => {
+    .query(({ input }) => {
       const post = blogs.find((blog) => blog.id == input.postId);
 
       return {

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import BlogImg from "~/assets/images/blog.png";
 import { Arrow } from "../icons";
 import Link from "next/link";
 import { shortenText } from "~/utils/shortenText";

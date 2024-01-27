@@ -68,7 +68,7 @@ const useChat = () => {
   async function loadMessages() {
     if (user?.email?.length) {
       const data = await getMessagesMutation.mutateAsync({
-        userId: user?.email as string,
+        userId: user.email,
       });
 
       setChats(data.data);
@@ -89,7 +89,9 @@ const useChat = () => {
   }, [selectedChatId]);
 
   useEffect(() => {
-    loadMessages();
+    loadMessages().catch((err: unknown) => {
+      console.log(err);
+    });
   }, [user]);
 
   return {

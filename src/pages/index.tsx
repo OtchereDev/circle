@@ -1,11 +1,8 @@
-import Head from "next/head";
 import ChatCard from "~/components/home/ChatCard";
 import MainLayout from "~/layout/MainLayout";
 import Img1 from "~/assets/images/right-1.png";
 import Img2 from "~/assets/images/right-2.png";
 import Img3 from "~/assets/images/right-3.png";
-import Img4 from "~/assets/images/asian-store.png";
-import Img5 from "~/assets/images/african-resturant.png";
 
 import { api } from "~/utils/api";
 import JobCard from "~/components/home/JobCard";
@@ -167,10 +164,7 @@ export default function Home() {
         <p className="text-lg font-semibold  lg:text-2xl">Resources</p>
 
         <div className="mt-5 flex flex-col gap-7 lg:flex-row lg:flex-wrap lg:justify-between">
-          {data?.posts?.map((post) => <BlogCard blog={post} />)}
-          {/* <BlogCard />
-          <BlogCard />
-          <BlogCard /> */}
+          {data?.posts?.map((post) => <BlogCard key={post.id} blog={post} />)}
         </div>
       </div>
     </MainLayout>

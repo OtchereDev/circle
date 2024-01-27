@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MainLayout from "~/layout/MainLayout";
 import Select from "~/components/shared/Select";
 import FoodCard from "~/components/home/FoodCard";

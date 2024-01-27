@@ -1,7 +1,6 @@
 import React from "react";
-import { Arrow, Direction, Location } from "../icons";
+import { Direction, Location } from "../icons";
 import Image, { StaticImageData } from "next/image";
-import { useRouter } from "next/router";
 
 interface IFoodCard {
   img: StaticImageData | string;
