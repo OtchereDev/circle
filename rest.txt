@@ -1,0 +1,48 @@
+location_id:"10460592"
+name:"Bonoo Indian Tapas Restaurant"
+latitude:"51.561447"
+longitude:"-0.197278"
+num_reviews:"2727"
+timezone:"Europe/London"
+location_string:"London, England"
+photo:
+api_detail_url:"https://api.tripadvisor.com/api/internal/1.14/location/10460592"
+awards:
+doubleclick_zone:"eu.uk.london"
+preferred_map_engine:"default"
+raw_ranking:"4.923961639404297"
+ranking_geo:"London"
+ranking_geo_id:"186338"
+ranking_position:"1"
+ranking_denominator:"19290"
+ranking_category:"restaurant"
+ranking:"#1 of 18,209 Restaurants in London"
+distance:null
+distance_string:null
+bearing:null
+rating:"5.0"
+is_closed:false
+open_now_text:"Closed Now"
+is_long_closed:false
+price_level:"$$ - $$$"
+price:"$20 - $50"
+description:""​BONOO IS ALL ABOUT SHARING & EATING THE INDIAN WAY " ​Bonoo Indian Tapas Kitchen is serving upmarket Indian Street Food. We specialise in tapas style dishes from across India. Our dishes come fresh and seasonal with prime British ingredients and authentic bold flavours from the streets of India with our own healthy twist, they include Indian chaats, biryanis, classic curries, kathi rolls, grilled dishes from the tandoor, and a huge selection of vegetarian dishes, all served in our vibrant casual dining restaurant."
+web_url:"https://www.tripadvisor.com/Restaurant_Review-g186338-d10460592-Reviews-Bonoo_Indian_Tapas_Restaurant-London_England.html"
+write_review:"https://www.tripadvisor.com/UserReview-g186338-d10460592-Bonoo_Indian_Tapas_Restaurant-London_England.html"
+ancestors:
+category:
+subcategory:
+parent_display_name:"London"
+is_jfy_enabled:false
+nearest_metro_station:
+phone:"+44 20 7794 8899"
+website:"http://www.bonoo.co.uk"
+address_obj:
+address:"675 Finchley Road, London NW2 2JP England"
+hours:
+is_candidate_for_contact_info_suppression:false
+cuisine:
+dietary_restrictions:
+booking:
+reserve_info:
+establishment_types:
