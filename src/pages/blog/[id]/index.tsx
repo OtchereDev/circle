@@ -1,9 +1,9 @@
-import Image from "next/image";
-import React from "react";
-import MainLayout from "~/layout/MainLayout";
-import Img from "~/assets/images/blog.png";
-import { api } from "~/utils/api";
 import { useRouter } from "next/router";
+import Image from "next/image";
+
+import { api } from "~/utils/api";
+
+import MainLayout from "~/layout/MainLayout";
 
 const Index = () => {
   const router = useRouter();

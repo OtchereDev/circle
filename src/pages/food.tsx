@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+import { api } from "~/utils/api";
+
 import MainLayout from "~/layout/MainLayout";
+
 import Select from "~/components/shared/Select";
 import FoodCard from "~/components/home/FoodCard";
-import { api } from "~/utils/api";
 
 const Food = () => {
   const [location, setLocation] = useState("186338");

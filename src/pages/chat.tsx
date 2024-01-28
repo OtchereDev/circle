@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import React, { useState } from "react";
+import { Toaster, toast } from "sonner";
+
+import useChat from "~/hooks/useChat";
+
+import MainLayout from "~/layout/MainLayout";
+
+import Select from "~/components/shared/Select";
 import ChatItem from "~/components/chat/ChatItem";
 import { Plus, Recent, SelectArrow, Send } from "~/components/icons";
-import Select from "~/components/shared/Select";
-import useChat from "~/hooks/useChat";
-import MainLayout from "~/layout/MainLayout";
-import { Toaster, toast } from "sonner";
 
 const Chat = () => {
   const {

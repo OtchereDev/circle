@@ -1,18 +1,20 @@
-import ChatCard from "~/components/home/ChatCard";
-import MainLayout from "~/layout/MainLayout";
-import Img1 from "~/assets/images/right-1.png";
-import Img2 from "~/assets/images/right-2.png";
-import Img3 from "~/assets/images/right-3.png";
+import { useUser } from "@auth0/nextjs-auth0/client";
+import Link from "next/link";
 
 import { api } from "~/utils/api";
+
+import MainLayout from "~/layout/MainLayout";
+import ChatCard from "~/components/home/ChatCard";
 import JobCard from "~/components/home/JobCard";
 import Select from "~/components/shared/Select";
 import FoodCard from "~/components/home/FoodCard";
 import SeeMoreBtn from "~/components/shared/SeeMoreBtn";
 import BlogCard from "~/components/home/BlogCard";
 import { Foods } from "~/constants";
-import Link from "next/link";
-import { useUser } from "@auth0/nextjs-auth0/client";
+
+import Img1 from "~/assets/images/right-1.png";
+import Img2 from "~/assets/images/right-2.png";
+import Img3 from "~/assets/images/right-3.png";
 
 const Helps = [
   {
